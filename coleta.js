@@ -1,3 +1,3 @@
-function (mensagem){
-
+function coleta(mensagem){
+    
 }
