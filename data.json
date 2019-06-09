@@ -3,6 +3,8 @@
         "year":,
         "month":,
         "day":,
+        "hour":,
+        "bus":"",
         "street":"",
         "status":""
     }

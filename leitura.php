@@ -9,7 +9,7 @@
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-      $.getJSON( "people.json", function( data ) {
+    $.getJSON( "people.json", function( data ) {
     var items = [];
     $.each( data, function( key, val ) {
       items.push( "<li id='" + key + "'>" + val + "</li>" );
