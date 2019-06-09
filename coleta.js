@@ -4,3 +4,4 @@ function collectMsg(msg){
     const finalArray = str.split(" ");
     return finalArray;
 }
+

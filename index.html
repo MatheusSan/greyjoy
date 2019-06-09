@@ -8,8 +8,12 @@
 </head>
 <body>
     <script src="coleta.js"></script> 
+    <script src="lib/moment/moment.min.js"></script>
     <script>
-    console.log(collectMsg("ai oi ei ui"));
-    </script>   
+        console.log(moment().format("YYYY"));
+        const array = new Array('oi', 'eu');
+        let json = JSON.stringify(array);
+        document.writeln(json);
+    </script>
 </body>
 </html>
