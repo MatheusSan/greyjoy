@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<main>
+    
 <script src="teste.js"></script>
 <script src="lib/moment/moment.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -29,5 +30,5 @@
         }
         
     </script>
-</body>
+</main>
 </html>
