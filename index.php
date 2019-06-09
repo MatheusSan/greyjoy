@@ -8,23 +8,23 @@
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <input type="text" id="name">
-    <input type="text" id="surname">
-    <input type="text" id="mobile">
-    <input type="text" id="email">
+<script src="coleta.js"></script>
+    <input type="text" id="msg">
+    <button onclick='clicou()'>OK</button>
     <script>
-        var name = $("#name").val();
-        var surname = $("#surname").val();
-        var mobile = $("#mobile").val();
-        var email = $("#email").val();
-        $.ajax({type:"POST",
+        function clicou(){
+            const input = document.getElementById('msg');
+            let mensagem = input.value;
+            let array = collectMsg(mensagem);
+            $.ajax({type:"POST",
             url:"wjson.php",
-            data:"name="+name+"&surname="+surname+"&mobile="+mobile+"&email="+email,
+            data:"msg="+array,
             success:function(data) {
 
             }
         });
+        }
+        
     </script>
 </body>
 </html>

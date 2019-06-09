@@ -1,9 +1,6 @@
 <?php
-$name = $_POST['name'];
-$surname =$_POST['surname'];
-$mobile = $_POST['mobile'];
-$email =$_POST['email'];
-$array = array($name, $surname, $mobile, $email);
+$array = $_POST['msg'];
+
 // Loading existing data:
 $json = file_get_contents("people.json");
 $data = json_decode($json, true);
