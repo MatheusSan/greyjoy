@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="teste.js"></script>
+<script src="teste.js"></script>
+<script src="lib/moment/moment.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="coleta.js"></script>
     <input type="text" id="msg">
