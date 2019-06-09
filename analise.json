@@ -1,0 +1,20 @@
+[
+    {
+        "streets":[
+            "ferreira",
+            "laranjal",
+            "centro"
+        ],
+        "status":[
+            "obstruida",
+             "parada", 
+             "esburacada",
+             "alagada",
+             "obras",
+             "acidente",
+             "buracos",
+             "lotado",
+             "vazio"
+            ]
+    }
+]
