@@ -11,6 +11,7 @@
 <script src="lib/moment/moment.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="coleta.js"></script>
+<script src="lib/moment/moment.min.js"></script>
     <input type="text" id="msg">
     <button onclick='clicou()'>OK</button>
     <script>

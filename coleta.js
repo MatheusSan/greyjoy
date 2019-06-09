@@ -1,7 +1,7 @@
 function collectMsg(msg){
     const str = msg;
     const finalArray = str.split(" ");
-    array = compareKeyword(finalArray);
+    //array = compareKeyword(finalArray);
     return finalArray;
     
 }
