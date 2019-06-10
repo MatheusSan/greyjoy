@@ -1,17 +1,17 @@
 <?php
-$dados = $_POST['dados'];
-//formatata dados para formato JSON
-$dadosJson = json_encode($data);
+$data = $_POST['dados'];
 
-//o nome do arquivo
-$arquivo = 'arquivo.json';
+$dadoFormatado = json_encode($data);
+
+//define o nome do arquivo como data atual YYYY-MM-DD.json
+$arquivo = date('Y-m-d').'.json';
 
 //abre ou cria o arquivo
 $arquivoAberto = fopen($arquivo,'w+');
 
-//escreve no arquivo aberto
-fwrite($arquivoAberto,$dadosJson);
+//write the data into the file
+fwrite($arquivoAberto,$dadoFormatado);
 
-//fecha o arquivo aberto
+//close the file
 fclose($arquivoAberto);
 ?>

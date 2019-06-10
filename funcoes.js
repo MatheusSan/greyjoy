@@ -27,9 +27,9 @@ function armazenar(value){
 }
 
 function apagar(){
-    return localStorage.clear();
+    return localStorage.clear();                    //método nativo do js, poderia ser utilizado o remove('index')
 }
 
 function armazenarNoArquivoJson(array){             //armazena os dados no arquivo JSON
-    return $.post('query.php', {dados: array});
+    return $.post('query.php', {dados: array});     //método do Jquery $.METODO('url.php', {nome: variável});
 }
