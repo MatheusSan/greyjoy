@@ -4,6 +4,14 @@ function getText(msg){                      //função da gabi para converter te
     return finalArray;   
 }
 
+function apagar(){
+    return localStorage.clear();                    //método nativo do js, poderia ser utilizado o remove('index')
+}
+
+function armazenarNoArquivoJson(array){             //armazena os dados no arquivo JSON
+    return $.post('query.php', {dados: array});     //método do Jquery $.METODO('url.php', {nome: variável});
+}
+
 function armazenar(value){
     let array = getText(value);                         //função da gabi
 
@@ -26,10 +34,3 @@ function armazenar(value){
     return armazenarNoArquivoJson(arrayDeDados);
 }
 
-function apagar(){
-    return localStorage.clear();                    //método nativo do js, poderia ser utilizado o remove('index')
-}
-
-function armazenarNoArquivoJson(array){             //armazena os dados no arquivo JSON
-    return $.post('query.php', {dados: array});     //método do Jquery $.METODO('url.php', {nome: variável});
-}

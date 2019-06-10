@@ -9,9 +9,9 @@ $arquivo = date('Y-m-d').'.json';
 //abre ou cria o arquivo
 $arquivoAberto = fopen($arquivo,'w+');
 
-//write the data into the file
+//escreve no arquivo aberto
 fwrite($arquivoAberto,$dadoFormatado);
 
-//close the file
+//fecha o arquivo aberto
 fclose($arquivoAberto);
 ?>
