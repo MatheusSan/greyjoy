@@ -10,7 +10,7 @@ $arquivo = 'arquivo.json';
 $arquivoAberto = fopen($arquivo,'w+');
 
 //escreve no arquivo aberto
-fwrite($arquivoAberto,$formattedData);
+fwrite($arquivoAberto,$dadosJson);
 
 //fecha o arquivo aberto
 fclose($arquivoAberto);
