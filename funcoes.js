@@ -1,4 +1,4 @@
-function getText(msg){                                  //função da gabi para converter texto para array;
+function getText(msg){                      //função da gabi para converter texto para array;
     const str = msg;
     const finalArray = str.split(" ");
     return finalArray;   
@@ -21,9 +21,15 @@ function armazenar(value){
         const novoDadoJson = JSON.stringify(array);
         localStorage.setItem("dados", novoDadoJson);
     }
-    return console.log(array);
+    const arquivoJson = localStorage.getItem('dados');
+    const arrayDeDados = JSON.parse(arquivoJson);
+    return armazenarNoArquivoJson(arrayDeDados);
 }
 
 function apagar(){
     return localStorage.clear();
+}
+
+function armazenarNoArquivoJson(array){             //armazena os dados no arquivo JSON
+    return $.post('query.php', {dados: array});
 }
